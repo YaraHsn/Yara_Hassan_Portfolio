@@ -1,0 +1,832 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500');
+
+html,
+body,
+header {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Dosis', sans-serif;
+    -webkit-user-select: none;
+    /* Safari 3.1+ */
+    -moz-user-select: none;
+    /* Firefox 2+ */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Standard syntax */
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Open Sans';
+    font-weight: 700; */
+}
+
+/* new nav */
+
+/* navbar */
+.custom-navbar {
+    padding-top: 15px;
+}
+
+
+
+.navbar-links {
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+.navbar-links ul {
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*    overflow: hidden;*/
+    display: flex;
+    align-items: center;
+}
+
+li {
+    float: left;
+    padding: 0px 15px;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 12px;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    position: relative;
+
+
+}
+
+li a:hover {
+    color: #ffcb39;
+    text-decoration: none;
+
+}
+
+
+.btn-request {
+    padding: 10px 25px;
+    border: 1px solid #FFCB39;
+    border-radius: 100px;
+    font-weight: 400;
+}
+
+.btn-request:hover {
+    background-color: #FFCB39;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.btn-go-home {
+    position: relative;
+    z-index: 200;
+    margin: 15px auto;
+    width: 100px;
+    padding: 10px 15px;
+    border: 1px solid #FFCB39;
+    border-radius: 100px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.btn-go-home:hover {
+    background-color: #FFCB39;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+
+
+.central-body {
+    /*    width: 100%;*/
+    padding: 17% 5% 10% 4%;
+    text-align: center;
+}
+
+li a:visited {
+    color: white;
+
+}
+
+.central-body a:visited {
+    color: white;
+
+}
+
+
+#portfolio,
+#presentation,
+header {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.Main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+
+}
+
+header {
+    background-color: #0f2358;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../Images/galaxyydarker.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #ededed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link-btn {
+    position: absolute;
+    bottom: 10px;
+    width: 10vw;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center
+}
+
+.link-btn a img:hover {
+    transition: all .2s ease-in;
+    width: 60px
+}
+
+.link-btn a img:nth-child(1):hover img {
+    src: url(Images/Vectors/linkedin_hover.svg)
+}
+
+
+#footer {
+    background: linear-gradient(0deg, #000203, #02070f);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: relative
+}
+
+#footer-top a {
+    padding: 0 10px
+}
+
+#footer div {
+
+    margin: 0 auto;
+    padding: 8px
+}
+
+#footer p {
+    font-size: 15px;
+    font-family: calibri;
+    text-shadow: 1px 0 1px #000
+}
+
+#footer a {
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+}
+
+
+/* rocket et astro */
+
+@-moz-keyframes rocket-movement {
+    100% {
+        -moz-transform: translate(1200px, -600px);
+    }
+}
+
+@-webkit-keyframes rocket-movement {
+    100% {
+        -webkit-transform: translate(1200px, -600px);
+    }
+}
+
+@keyframes rocket-movement {
+    100% {
+        transform: translate(1200px, -600px);
+    }
+}
+
+@-moz-keyframes spin-earth {
+    100% {
+        -moz-transform: rotate(-360deg);
+        transition: transform 20s;
+    }
+}
+
+@-webkit-keyframes spin-earth {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transition: transform 20s;
+    }
+}
+
+@keyframes spin-earth {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+        transition: transform 20s;
+    }
+}
+
+@-moz-keyframes move-astronaut {
+    100% {
+        -moz-transform: translate(-160px, -160px);
+    }
+}
+
+@-webkit-keyframes move-astronaut {
+    100% {
+        -webkit-transform: translate(-160px, -160px);
+    }
+}
+
+@keyframes move-astronaut {
+    100% {
+        -webkit-transform: translate(-160px, -160px);
+        transform: translate(-160px, -160px);
+    }
+}
+
+@-moz-keyframes rotate-astronaut {
+    100% {
+        -moz-transform: rotate(-720deg);
+    }
+}
+
+@-webkit-keyframes rotate-astronaut {
+    100% {
+        -webkit-transform: rotate(-720deg);
+    }
+}
+
+@keyframes rotate-astronaut {
+    100% {
+        -webkit-transform: rotate(-720deg);
+        transform: rotate(-720deg);
+    }
+}
+
+@-moz-keyframes glow-star {
+    40% {
+        -moz-opacity: 0.3;
+    }
+
+    90%,
+    100% {
+        -moz-opacity: 1;
+        -moz-transform: scale(1.2);
+    }
+}
+
+@-webkit-keyframes glow-star {
+    40% {
+        -webkit-opacity: 0.3;
+    }
+
+    90%,
+    100% {
+        -webkit-opacity: 1;
+        -webkit-transform: scale(1.2);
+    }
+}
+
+@keyframes glow-star {
+    40% {
+        -webkit-opacity: 0.3;
+        opacity: 0.3;
+    }
+
+    90%,
+    100% {
+        -webkit-opacity: 1;
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        border-radius: 999999px;
+    }
+}
+
+.spin-earth-on-hover {
+
+    transition: ease 200s !important;
+    transform: rotate(-3600deg) !important;
+}
+
+
+
+
+
+
+
+.objects img {
+    z-index: 90;
+    pointer-events: none;
+}
+
+.object_rocket {
+    z-index: 95;
+    position: absolute;
+    transform: translateX(-50px);
+    top: 75%;
+    pointer-events: none;
+    animation: rocket-movement 200s linear infinite both running;
+}
+
+.object_earth {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    z-index: 90;
+    /*    animation: spin-earth 100s infinite linear both;*/
+}
+
+.object_moon {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+
+    /*
+    transform: rotate(0deg);
+    transition: transform ease-in 99999999999s;
+    
+*/
+}
+
+
+.object_astronaut {
+    animation: rotate-astronaut 200s infinite linear both alternate;
+}
+
+.box_astronaut {
+    z-index: 110 !important;
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    will-change: transform;
+    animation: move-astronaut 50s infinite linear both alternate;
+
+}
+
+.stars {
+    background: url(http://salehriaz.com/404Page/img/overlay_stars.svg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: left top;
+}
+
+.glowing_stars .star {
+    position: absolute;
+    border-radius: 100%;
+    background-color: #fff;
+    width: 3px;
+    height: 3px;
+    opacity: 0.3;
+    will-change: opacity;
+}
+
+.glowing_stars .star:nth-child(1) {
+    top: 80%;
+    left: 25%;
+    animation: glow-star 2s infinite ease-in-out alternate 1s;
+}
+
+.glowing_stars .star:nth-child(2) {
+    top: 20%;
+    left: 40%;
+    animation: glow-star 2s infinite ease-in-out alternate 3s;
+}
+
+.glowing_stars .star:nth-child(3) {
+    top: 25%;
+    left: 25%;
+    animation: glow-star 2s infinite ease-in-out alternate 5s;
+}
+
+.glowing_stars .star:nth-child(4) {
+    top: 75%;
+    left: 80%;
+    animation: glow-star 2s infinite ease-in-out alternate 7s;
+}
+
+.glowing_stars .star:nth-child(5) {
+    top: 90%;
+    left: 50%;
+    animation: glow-star 2s infinite ease-in-out alternate 9s;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .custom-navbar {
+        text-align: center;
+    }
+
+    .box_astronaut {
+        top: 70%;
+    }
+
+    .central-body {
+        padding-top: 25%;
+    }
+}
+
+
+/*stars animation*/
+#galaxy {
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: background 0.8s ease-out;
+    -moz-transition: background 0.8s ease-out;
+    -o-transition: background 0.8s ease-out;
+    -ms-transition: background 0.8s ease-out;
+    transition: background 0.8s ease-out;
+}
+
+#galaxy,
+#galaxy .bg {
+    width: 100%;
+    height: 100%;
+}
+
+#galaxy * {
+    position: absolute;
+}
+
+#galaxy .bg.center {
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    margin: -100px 0 0 -200px;
+    opacity: 0.8;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+}
+
+#galaxy [class^="stars"] {
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+
+#galaxy .stars-back {
+    background: url('https://raw.githubusercontent.com/gurde/css3-animated-galaxy/master/img/back.png');
+    -webkit-animation: orbit-clock-wise 440s infinite linear;
+    -moz-animation: orbit-clock-wise 440s infinite linear;
+    -o-animation: orbit-clock-wise 440s infinite linear;
+    -ms-animation: orbit-clock-wise 440s infinite linear;
+    animation: orbit-clock-wise 440s infinite linear;
+}
+
+#galaxy .stars-middle {
+    background: url('https://raw.githubusercontent.com/gurde/css3-animated-galaxy/master/img/middle.png');
+    -webkit-animation: orbit-counter-clock-wise 360s infinite linear;
+    -moz-animation: orbit-counter-clock-wise 360s infinite linear;
+    -o-animation: orbit-counter-clock-wise 360s infinite linear;
+    -ms-animation: orbit-counter-clock-wise 360s infinite linear;
+    animation: orbit-counter-clock-wise 360s infinite linear;
+}
+
+/* #galaxy .stars-front {
+    background: url('https://raw.githubusercontent.com/gurde/css3-animated-galaxy/master/img/front.png');
+    -webkit-animation: orbit-clock-wise 160s infinite linear;
+    -moz-animation: orbit-clock-wise 160s infinite linear;
+    -o-animation: orbit-clock-wise 160s infinite linear;
+    -ms-animation: orbit-clock-wise 160s infinite linear;
+    animation: orbit-clock-wise 160s infinite linear;
+} */
+
+@-webkit-keyframes orbit-clock-wise {
+    0% {
+        opacity: 0.4;
+        -webkit-transform: rotate(0deg);
+    }
+
+    2% {
+        opacity: 0.8;
+    }
+
+    4% {
+        opacity: 0.2;
+    }
+
+    5% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.4;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes orbit-counter-clock-wise {
+    from {
+        -webkit-transform: rotate(360deg);
+    }
+
+    to {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes orbit-clock-wise {
+    0% {
+        opacity: 0.4;
+        -moz-transform: rotate(0deg);
+    }
+
+    2% {
+        opacity: 0.8;
+    }
+
+    4% {
+        opacity: 0.2;
+    }
+
+    5% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.4;
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes orbit-counter-clock-wise {
+    from {
+        -moz-transform: rotate(360deg);
+    }
+
+    to {
+        -moz-transform: rotate(0deg);
+    }
+}
+
+@-o-keyframes orbit-clock-wise {
+    0% {
+        opacity: 0.4;
+        -o-transform: rotate(0deg);
+    }
+
+    2% {
+        opacity: 0.8;
+    }
+
+    4% {
+        opacity: 0.2;
+    }
+
+    5% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.4;
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes orbit-counter-clock-wise {
+    from {
+        -o-transform: rotate(360deg);
+    }
+
+    to {
+        -o-transform: rotate(0deg);
+    }
+}
+
+@-ms-keyframes orbit-clock-wise {
+    0% {
+        opacity: 0.4;
+        -ms-transform: rotate(0deg);
+    }
+
+    2% {
+        opacity: 0.8;
+    }
+
+    4% {
+        opacity: 0.2;
+    }
+
+    5% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.4;
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes orbit-counter-clock-wise {
+    from {
+        -ms-transform: rotate(360deg);
+    }
+
+    to {
+        -ms-transform: rotate(0deg);
+    }
+}
+
+@keyframes orbit-clock-wise {
+    0% {
+        opacity: 0.4;
+        transform: rotate(0deg);
+    }
+
+    2% {
+        opacity: 0.8;
+    }
+
+    4% {
+        opacity: 0.2;
+    }
+
+    5% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.4;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes orbit-counter-clock-wise {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* book */
+
+
+.central-body img {
+    width: 50%;
+    display: none;
+    opacity: 0;
+    animation: fadeThatDisplay 1s;
+
+}
+
+.central-body img.is-visible {
+    display: block;
+    opacity: 1;
+    box-shadow: 0px 1px 0px #FFCB39;
+
+}
+
+.next,
+.prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0px;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+
+
+}
+
+.next {
+    right: 0px;
+    margin-right: 10px;
+    border-right: 17px solid transparent;
+    border-left: 17px solid #F7FFF1;
+
+
+}
+
+.prev {
+    left: 0px;
+    margin-left: 10px;
+    border-right: 17px solid #F7FFF1;
+    border-left: 17px solid transparent;
+}
+
+.close {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-family: sans-serif;
+    position: absolute;
+    top: -25px;
+    left: 78%;
+    cursor: pointer;
+
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#modal-window {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale3d(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+    z-index: 200;
+}
+
+#modal-window.is-visible {
+    transform: scale3d(1, 1, 1);
+}
+
+@keyframes fadeThatDisplay {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+/* a retirer ?
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px black;
+    }
+} */

@@ -2,179 +2,278 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <title>Yara Hassan - Portfolio</title>
-    <link rel="stylesheet" href="Stylesss.css">
-    <meta name="author" content="Yara Hassan">
-    <meta name="description" content="Index">
-    <meta name="keywords" content="yara, hassan, site, portfolio, web, design, multimedia, mmi, graphiste">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <meta charset="utf-8">
+        <title>Yara Hassan - Portfolio</title>
+        <link rel="stylesheet" href="css/Stylesss.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <meta name="author" content="Yara Hassan">
+        <meta name="description" content="Index">
+        <meta name="keywords" content="yara, hassan, site, portfolio, web, design, multimedia, mmi, graphiste">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet'>
+        <script>
+                AOS.init();
+        </script>
+
 </head>
 
 <body>
-    <header>
-        <section id="box-illus">
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Accueil</a></li>
-                        <li><a href="#presentation">Présentation</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#portfolio">Art book</a></li>
-                    </ul>
-            </nav>
-            </div>
-            <div class="Main">
-                <h1>YARA HASSAN</h1>
-                <h2>Étudiante en métiers du multimédia et de l'internet</h2>
-                <div id="cv"> <a href="Images/CV/CV_graphique.png" target="_blank" id="cv-box">Voir mon CV graphique</a>
+
+
+        <header>
+                <section id="box-illus">
+                        <div class="custom-navbar"></div>
+                        <!-- retirer ? LOGO 
+                                
+                                <div class="logonav" onclick="location.href='#';" style="cursor:pointer;">YARA
+                                </div> -->
+                        <div class="navbar-links">
+                                <ul>
+                                        <li><a href="#">Accueil</a></li>
+                                        <li><a href="#presentation">A propos</a></li>
+                                        <li><a href="#portfolio">MMI Portfolio</a></li>
+                                        <li><a href="artbook.html" class="btn-request">Art
+                                                        book</a></li>
+                                </ul>
+                        </div>
+                        </div>
+
+                        <div class="Main">
+                                <div id="container">
+                                        <span id="text1"></span>
+                                        <span id="text2"></span>
+                                </div>
+                                <!-- Yara hassan -->
+                                <svg id="filters">
+                                        <defs>
+                                                <filter id="threshold">
+                                                        <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140" />
+                                                </filter>
+                                        </defs>
+                                </svg>
+
+                                <!-- cv button -->
+                                <div class="central-body">
+                                        <a href="Images/CV/CV_graphique.png" class="btn-go-home" target="_blank">Voir
+                                                mon CV
+                                                graphique</a>
+                                </div>
+                        </div>
+                        <!--Waves Container-->
+                        <div>
+                                <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+                                        preserveAspectRatio="none" shape-rendering="auto">
+                                        <defs>
+                                                <path id="gentle-wave"
+                                                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                        </defs>
+                                        <g class="parallax">
+                                                <use xlink:href="#gentle-wave" x="48" y="0"
+                                                        fill="rgba(16, 41, 94, 0.7)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="3"
+                                                        fill="rgba(16, 41, 94, 0.5)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="5"
+                                                        fill="rgba(16, 41, 94, 0.3)" />
+                                                <use xlink:href="#gentle-wave" x="48" y="7"
+                                                        fill="rgba(16, 41, 94, 1)" />
+                                        </g>
+                                </svg>
+                        </div>
+                        <!--Waves end-->
+                        <!-- fleche -->
+                        <a class="ca3-scroll-down-link ca3-scroll-down-arrow" href="#presentation"
+                                data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+
+                </section>
+
+        </header>
+
+        <section class="ocean" id="presentation">
+
+
+                <div class="Mapresentation">
+
+                        <h3>A propos</h3>
+                        <div class="text-presentation">
+
+                                <p> Je m'appelle Yara Hassan j’ai 18 ans et je suis étudiante en première année en DUT
+                                        Métiers du
+                                        Multimédia et de l’Internet.</p>
+                                <p> Actuellement en formation au sein de l’IUT d’Elbeuf ou l'on étudie le développement
+                                        web,
+                                        l'infographie, le réseaux et l'audiovisuel.</p>
+                                <p>Jusqu’à maintenant dans cet etablissement j’ai appris les bases du développement web
+                                        comme
+                                        vous le
+                                        voyez, sur ce site, vous y trouverez mes travaux d'études et autres. Mais vous
+                                        pouvez
+                                        également
+                                        consulter mon CV graphique et mon cv vidéo que j'ai fait en première année.</p>
+                                <p> Si vous voulez me contacter n'hésitez pas à m'envoyer un mail à cette adresse email
+                                        :
+                                        yara.hsn12@gmail.com</p>
+                        </div>
+
+                        <div class="bubble bubble--1"></div>
+                        <div class="bubble bubble--2"></div>
+                        <div class="bubble bubble--3"></div>
+                        <div class="bubble bubble--4"></div>
+                        <div class="bubble bubble--5"></div>
+                        <div class="bubble bubble--6"></div>
+                        <div class="bubble bubble--7"></div>
+                        <div class="bubble bubble--8"></div>
+                        <div class="bubble bubble--9"></div>
+                        <div class="bubble bubble--10"></div>
+                        <div class="bubble bubble--11"></div>
+                        <div class="bubble bubble--12"></div>
+
+
+
+                        <a class="ca3-scroll-down-link ca3-scroll-down-arrow" href="#portfolio"
+                                data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+
+
+                        <!-- mettre des icones a droite  -->
+        </section>
+
+        <section id="portfolio">
+
+
+                <h3>Portfolio</h3>
+
+
+                <div class="m-p-g">
+                        <div class="m-p-g__thumbs" data-google-image-layout data-max-height="250">
+
+                                <a><img src="Images/Portfolio/Typofont/HASSAN_Yara_Maquette(Accueil).jpg"
+                                                data-full="Images/Portfolio/Typofont/HASSAN_Yara_Maquette(Accueil).jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Typofont/HASSAN_Yara_Maquette(Créations).jpg"
+                                                data-full="Images/Portfolio/Typofont/HASSAN_Yara_Maquette(Créations).jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Typofont/HASSAN_Yara_Maquette(Typographie).jpg"
+                                                data-full="Images/Portfolio/Typofont/HASSAN_Yara_Maquette(Typographie).jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Typofont/HASSAN_Yara_affiche.jpg"
+                                                data-full="Images/Portfolio/Typofont/HASSAN_Yara_affiche.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Infographie/Maquette_site_crous.jpg"
+                                                data-full="Images/Portfolio/Infographie/Maquette_site_crous.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/EMN/Affiche_abribus_sans_effet.png"
+                                                data-full="Images/Portfolio/EMN/Affiche_abribus_sans_effet.png"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Infographie/Desktop-Accueil.jpg"
+                                                data-full="Images/Portfolio/Infographie/Desktop-Accueil.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Infographie/Desktop-Nos produits.jpg"
+                                                data-full="Images/Portfolio/Infographie/Desktop-Nos produits.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Infographie/Desktop-A propos.jpg"
+                                                data-full="Images/Portfolio/Infographie/Desktop-A propos.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Magazine/Magazine.jpg"
+                                                data-full="Images/Portfolio/Magazine/Magazine.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Magazine/Sommaire.jpg"
+                                                data-full="Images/Portfolio/Magazine/Sommaire.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/KAKEMONO_1.jpg"
+                                                data-full="Images/Portfolio/Ptut/KAKEMONO_1.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/KAKEMONO_2.jpg"
+                                                data-full="Images/Portfolio/Ptut/KAKEMONO_2.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/KAKEMONO_3.jpg"
+                                                data-full="Images/Portfolio/Ptut/KAKEMONO_3.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/Maquette2.png"
+                                                data-full="Images/Portfolio/Ptut/Maquette2.png"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/Maquette3.png"
+                                                data-full="Images/Portfolio/Ptut/Maquette3.png"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/Maquette1.png"
+                                                data-full="Images/Portfolio/Ptut/Maquette1.png"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/Mockup_Affiche4.jpg"
+                                                data-full="Images/Portfolio/Ptut/Mockup_Affiche4.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/Mockup_Affiche5.jpg"
+                                                data-full="Images/Portfolio/Ptut/Mockup_Affiche5.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/Mockup_Kakemono.jpg"
+                                                data-full="Images/Portfolio/Ptut/Mockup_Kakemono.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/Mockup_Affiche3.jpg"
+                                                data-full="Images/Portfolio/Ptut/Mockup_Affiche3.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/Mockup_Affiche6.jpg"
+                                                data-full="Images/Portfolio/Ptut/Mockup_Affiche6.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/Pub_Air.png"
+                                                data-full="Images/Portfolio/Ptut/Pub_Air.png"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/Mockup_logo.jpg"
+                                                data-full="Images/Portfolio/Ptut/Mockup_logo.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Ptut/Mockup_mobile.png"
+                                                data-full="Images/Portfolio/Ptut/Mockup_mobile.png"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Storyboard/Sb1-Headshot.jpg"
+                                                data-full="Images/Portfolio/Storyboard/Sb1-Headshot.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Storyboard/Sb2-Headshot.jpg"
+                                                data-full="Images/Portfolio/Storyboard/Sb2-Headshot.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Storyboard/Sb3-Headshot.jpg"
+                                                data-full="Images/Portfolio/Storyboard/Sb3-Headshot.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Storyboard/Sb5-Headshot.jpg"
+                                                data-full="Images/Portfolio/Storyboard/Sb5-Headshot.jpg"
+                                                class="m-p-g__thumbs-img" /></a>
+                                <a><img src="Images/Portfolio/Datadesign/Datadesign.png"
+                                                data-full="Images/Portfolio/Datadesign/Datadesign.png"
+                                                class="m-p-g__thumbs-img" /></a>
+
+
+
+
+                                <!-- fullscreen -->
+                                <div class="m-p-g__fullscreen"></div><!-- end fullscreen -->
+                        </div><!-- end m-p-g__thumbs -->
+                </div><!-- end gallery -->
+
+                <h4>CV Vidéo</h4>
+                <div class="CvVideo"> <video src="Images/CV_Video/PPPHASSAN_Yara_2020.mp4" width=320 height=240 controls
+                                poster=""></video> </div>
                 </div>
-            </div>
-            <div class="link-btn"> <a href="#presentation" id="btn-down"><img src="fleche1.png"
-                        alt="Flèche de navigation verticale" width="50px"></a> </div>
         </section>
-    </header>
-    <section id="presentation">
-        <div class="Mapresentation">
-            <h3>Présentation</h3>
-            <div class="text-presentation">
-                <p> Je m'appelle Yara Hassan j’ai 19 ans et je suis étudiante en deuxième année de DUT Métiers du
-                    Multimédia et de l’Internet.</p>
-                <p> Actuellement en formation au sein de l’IUT d’Elbeuf ou l'on étudie le développement web,
-                    l'infographie, le réseaux et l'audiovisuel.</p>
-                <p>Jusqu’à maintenant dans cet etablissemnt j’ai appris les bases du développement web comme vous le
-                    voyez, sur ce site, vous y trouverez mes travaux d'études et autres. Mais vous pouvez également
-                    consulter mon CV graphique et mon cv vidéo que j'ai fait en première année.</p>
-                <p> Si vous voulez me contacter n'hésitez pas à m'envoyer un mail à cette adresse email :
-                    yara.hsn12@gmail.com</p>
-            </div>
-        </div>
-        <div class="link-btn"> <a href="#portfolio" id="btn-down"><img src="fleche1.png"
-                    alt="Flèche de navigation verticale" width="50px"></a> </div>
-    </section>
-    <section id="portfolio">
-        <h3>Portfolio</h3>
-        <h4>Infographie / Communication</h4>
-        <section> <a href="Images/Portfolio/Typofont/HASSAN_Yara_Maquette(Accueil).jpg">
-                <div><img src="Images/Portfolio/Typofont/HASSAN_Yara_Maquette(Accueil).jpg"></div>
-                <p>Partie accueil de la maquette web 1/3</p>
-            </a> <a href="Images/Portfolio/Typofont/HASSAN_Yara_Maquette(Créations).jpg">
-                <div><img src="Images/Portfolio/Typofont/HASSAN_Yara_Maquette(Créations).jpg"></div>
-                <p>Partie créations de la maquette web 2/3</p>
-            </a> <a href="Images/Portfolio/Typofont/HASSAN_Yara_Maquette(Typographie).jpg">
-                <div><img src="Images/Portfolio/Typofont/HASSAN_Yara_Maquette(Typographie).jpg"></div>
-                <p>Partie typographie de la maquette web 2/3</p>
-            </a> </section>
-        <section> <a href="Images/Portfolio/Typofont/HASSAN_Yara_affiche.jpg">
-                <div><img src="Images/Portfolio/Typofont/HASSAN_Yara_affiche.jpg"></div>
-                <p>Affiche publicitaire pour Typofont</p>
-            </a> <a href="Images/Portfolio/Infographie/Maquette_site_crous.jpg">
-                <div><img src="Images/Portfolio/Infographie/Maquette_site_crous.jpg"></div>
-                <p>Maquette web pour le Crous fait sur InDesign</p>
-            </a> <a href="Images/Portfolio/EMN/Affiche_abribus_sans_effet.png">
-                <div><img src="Images/Portfolio/EMN/Affiche_abribus_sans_effet.png"></div>
-                <p>Affiche pour une soupe instantanée fait sur Illustrator</p>
-            </a> </section>
-        <section> <a href="Images/Portfolio/Infographie/Desktop-Accueil.png">
-                <div><img src="Images/Portfolio/Infographie/Desktop-Accueil.png"></div>
-                <p>Maquette web pour une boulangerie / pâtisserie 1/3</p>
-            </a> <a href="Images/Portfolio/Infographie/Desktop-Nos produits.png">
-                <div><img src="Images/Portfolio/Infographie/Desktop-Nos produits.png"></div>
-                <p>Maquette web pour une boulangerie / pâtisserie 2/3</p>
-            </a> <a href="Images/Portfolio/Infographie/Desktop-A propos.png">
-                <div><img src="Images/Portfolio/Infographie/Desktop-A propos.png"></div>
-                <p>Maquette web pour une boulangerie / pâtisserie 3/3</p>
-            </a> </section>
-        <section> <a href="Images/Portfolio/Magazine/Magazine.jpg">
-                <div><img src="Images/Portfolio/Magazine/Magazine.jpg"></div>
-                <p>Magazine "Savoir" fait sur Photoshop</p>
-            </a> <a href="Images/Portfolio/Magazine/Sommaire.jpg">
-                <div><img src="Images/Portfolio/Magazine/Sommaire.jpg"></div>
-                <p>Sommaire du magazine "Savoir" fait sur Photoshop</p>
-            </a> </section>
-        <h4>Projets tutorés / Autres</h4>
-        <section> <a href="Images/Portfolio/Ptut/KAKEMONO_1.png">
-                <div><img src="Images/Portfolio/Ptut/KAKEMONO_1.png"></div>
-                <p>Projet tutoré : Banque en ligne (Kakemono 1/3)</p>
-            </a> <a href="Images/Portfolio/Ptut/KAKEMONO_2.png">
-                <div><img src="Images/Portfolio/Ptut/KAKEMONO_2.png"></div>
-                <p>Projet tutoré : Banque en ligne (Kakemono 2/3)</p>
-            </a> <a href="Images/Portfolio/Ptut/KAKEMONO_3.png">
-                <div><img src="Images/Portfolio/Ptut/KAKEMONO_3.png"></div>
-                <p>Projet tutoré : Banque en ligne (Kakemono 3/3)</p>
-            </a> </section>
-        <h5>Réseau social dystopique</h5>
-        <section> <a href="Images/Portfolio/Ptut/Maquette2.png">
-                <div><img src="Images/Portfolio/Ptut/Maquette2.png"></div>
-                <p>Projet tutoré : Réseau social dystopique (Maquette web 1/3)</p>
-            </a> <a href="Images/Portfolio/Ptut/Maquette3.png">
-                <div><img src="Images/Portfolio/Ptut/Maquette3.png"></div>
-                <p> Projet tutoré : Réseau social dystopique, accueil (Maquette web 2/3)</p>
-            </a> <a href="Images/Portfolio/Ptut/Maquette1.png">
-                <div><img src="Images/Portfolio/Ptut/Maquette1.png"></div>
-                <p>Projet tutoré : Réseau social dystopique, boutique (Maquette web 3/3)</p>
-            </a> </section>
-        <section> <a href="Images/Portfolio/Ptut/Mockup_Affiche4.png">
-                <div><img src="Images/Portfolio/Ptut/Mockup_Affiche4.png"></div>
-                <p> Projet tutoré : Réseau social dystopique (Kakemono)</p>
-            </a> <a href="Images/Portfolio/Ptut/Mockup_Affiche5.png">
-                <div><img src="Images/Portfolio/Ptut/Mockup_Affiche5.png"></div>
-                <p>Projet tutoré : Réseau social dystopique (Affiche)</p>
-            </a> <a href="Images/Portfolio/Ptut/Mockup_Kakemono.png">
-                <div><img src="Images/Portfolio/Ptut/Mockup_Kakemono.png"></div>
-                <p>Projet tutoré : Réseau social dystopique (Affiche)</p>
-            </a> </section>
-        <section> <a href="Images/Portfolio/Ptut/Mockup_Affiche3.png">
-                <div><img src="Images/Portfolio/Ptut/Mockup_Affiche3.png"></div>
-                <p> Projet tutoré : Réseau social dystopique (Affiche)</p>
-            </a> <a href="Images/Portfolio/Ptut/Mockup_Affiche6.png">
-                <div><img src="Images/Portfolio/Ptut/Mockup_Affiche6.png"></div>
-                <p>Projet tutoré : Réseau social dystopique (Affiche)</p>
-            </a> <a href="Images/Portfolio/Ptut/Pub_Air.png">
-                <div><img src="Images/Portfolio/Ptut/Pub_Air.png"></div>
-                <p>Projet tutoré : Réseau social dystopique (Banderole Publicitaire Aerienne)</p>
-            </a> </section>
-        <section> <a href="Images/Portfolio/Ptut/Mockup_logo.png">
-                <div><img src="Images/Portfolio/Ptut/Mockup_logo.png"></div>
-                <p>Projet tutoré : Réseau social dystopique (Logo)</p>
-            </a> <a href="Images/Portfolio/Ptut/Mockup_mobile.png">
-                <div><img src="Images/Portfolio/Ptut/Mockup_mobile.png"></div>
-                <p>Projet tutoré : Réseau social dystopique (Mockup Mobile)</p>
-            </a> </section>
-        <h5>Premier storyboard (audiovisuel)</h5>
-        <section> <a href="Images/Portfolio/Storyboard/Sb1-Headshot.jpg">
-                <div><img src="Images/Portfolio/Storyboard/Sb1-Headshot.jpg"></div>
-            </a> <a href="Images/Portfolio/Storyboard/Sb2-Headshot.jpg">
-                <div><img src="Images/Portfolio/Storyboard/Sb2-Headshot.jpg"></div>
-            </a> </section>
-        <section> <a href="Images/Portfolio/Storyboard/Sb3-Headshot.jpg">
-                <div><img src="Images/Portfolio/Storyboard/Sb3-Headshot.jpg"></div>
-            </a> <a href="Images/Portfolio/Storyboard/Sb5-Headshot.jpg">
-                <div><img src="Images/Portfolio/Storyboard/Sb5-Headshot.jpg"></div>
-            </a> </section>
-        <h5>Datadesign sur la typographie</h5>
-        <section> <a href="Images/Portfolio/Datadesign/Datadesign.png">
-                <div><img src="Images/Portfolio/Datadesign/Datadesign.png"></div>
-            </a> </section>
-        <h4>Blender</h4>
-        <section> <a href="Images/Portfolio/Blender/PremierBlend.png">
-                <div><img src="Images/Portfolio/Blender/PremierBlend.png"></div>
-                <p>Premier pas sur Blender</p>
-            </a>
-            <div class="CvVideo"> <video src="Images/Portfolio/Blender/Hanging-light.mkv" alt="Blender" width=320
-                    height=240 controls poster=""></video> </div>
-        </section>
-        <h4>CV Vidéo</h4>
-        <div class="CvVideo"> <video src="Images/CV_Video/PPPHASSAN_Yara_2020.mp4" width=320 height=240 controls
-                poster=""></video> </div>
+
+
+
+
+
+
+
         <div id="footer">
-            <div>
-                <div id="footer-top"> <a href="https://www.instagram.com/yayaahsn/" target="_blank">Instagram</a> <a
-                        href="https://www.linkedin.com/in/yara-hassan-916b96198/" target="_blank">LinkedIn</a> </div>
-                <hr />
-                <p>Copyright © Yara Hassan. Tous droits réservés.<br>
-            </div>
+                <div>
+                        <div id="footer-top"> <a href="https://www.instagram.com/yayaahsn/"
+                                        target="_blank">Instagram</a> <a
+                                        href="https://www.linkedin.com/in/yara-hassan-916b96198/"
+                                        target="_blank">LinkedIn</a>
+                        </div>
+
+                        <p>Copyright © Yara Hassan. Tous droits réservés.<br>
+                </div>
         </div>
+        <script src="js/scripts.js"></script>
 </body>
 
 </html>
