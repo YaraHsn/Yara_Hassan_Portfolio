@@ -51,31 +51,126 @@ var modal = {
         chartLink.addEventListener('click', modal.show);
         return [
             {
-                img: 'Artbook-images/Digital-draw-1.png',
+                img: 'Artbook-images/draw/clean/36.jpg',
                 classes: ['mars is-visible compare-item']
             },
             {
-                img: 'Artbook-images/Digital-draw-1.png',
+                img: 'Artbook-images/draw/clean/37.jpg',
                 classes: ['middle compare-item']
             },
             {
-                img: 'Artbook-images/Digital-draw-1.png',
+                img: 'Artbook-images/draw/clean/38.jpg',
                 classes: ['yosemite compare-item']
             },
             {
-                img: 'Artbook-images/Digital-draw-1.png',
+                img: 'Artbook-images/draw/clean/39.jpg',
                 classes: ['stars compare-item']
             },
             {
-                img: 'Artbook-images/Digital-draw-1.png',
+                img: 'Artbook-images/draw/clean/40.jpg',
                 classes: ['yosemite compare-item']
             },
             {
-                img: 'Artbook-images/Digital-draw-1.png',
+                img: 'Artbook-images/draw/clean/41.jpg',
+                classes: ['yosemite compare-item']
+            },
+            {
+                img: 'Artbook-images/draw/clean/42.jpg',
+                classes: ['yosemite compare-item']
+            },
+            {
+                img: 'Artbook-images/draw/clean/43.jpg',
+                classes: ['yosemite compare-item']
+            },
+
+            {
+                img: 'Artbook-images/draw/clean/44.jpg',
+                classes: ['yosemite compare-item']
+            },
+
+            {
+                img: 'Artbook-images/draw/clean/45.jpg',
+                classes: ['yosemite compare-item']
+            },
+
+            {
+                img: 'Artbook-images/draw/clean/46.jpg',
+                classes: ['yosemite compare-item']
+            },
+            {
+                img: 'Artbook-images/draw/clean/47.jpg',
+                classes: ['yosemite compare-item']
+            },
+            {
+                img: 'Artbook-images/draw/clean/48.jpg',
+                classes: ['yosemite compare-item']
+            },
+            {
+                img: 'Artbook-images/draw/clean/49.jpg',
                 classes: ['yosemite compare-item']
             },
 
 
+            {
+                img: 'Artbook-images/draw/clean/50.jpg',
+                classes: ['yosemite compare-item']
+            },
+
+
+            {
+                img: 'Artbook-images/draw/clean/51.jpg',
+                classes: ['yosemite compare-item']
+            },
+
+
+            {
+                img: 'Artbook-images/draw/clean/A1.jpg',
+                classes: ['yosemite compare-item']
+            },
+
+
+            {
+                img: 'Artbook-images/draw/clean/A2.jpg',
+                classes: ['yosemite compare-item']
+            },
+
+
+            {
+                img: 'Artbook-images/draw/clean/A3.jpg',
+                classes: ['yosemite compare-item']
+            },
+            {
+                img: 'Artbook-images/draw/clean/A4.jpg',
+                classes: ['yosemite compare-item']
+            },
+            {
+                img: 'Artbook-images/draw/clean/D1.png',
+                classes: ['yosemite compare-item']
+            },
+            {
+                img: 'Artbook-images/draw/clean/D2.jpg',
+                classes: ['yosemite compare-item']
+            },
+            {
+                img: 'Artbook-images/draw/clean/D3.jpg',
+                classes: ['yosemite compare-item']
+            },
+            {
+                img: 'Artbook-images/draw/clean/D4.jpg',
+                classes: ['yosemite compare-item']
+            },
+            {
+                img: 'Artbook-images/draw/clean/Y1.jpg',
+                classes: ['yosemite compare-item']
+            },
+            {
+                img: 'Artbook-images/draw/clean/Y2.jpg',
+                classes: ['yosemite compare-item']
+            },
+            {
+                img: 'Artbook-images/draw/clean/Y3.jpg',
+                classes: ['yosemite compare-item']
+            }
 
 
         ];

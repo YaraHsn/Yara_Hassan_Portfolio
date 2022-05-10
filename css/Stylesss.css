@@ -9,6 +9,11 @@ img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, .5)
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
 html,
 body,
 header {
@@ -699,7 +704,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     justify-content: center;
     width: 100%;
     height: auto;
-    margin-top: 180px;
+    margin-top: 150px;
 
 
 }
@@ -754,6 +759,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
     .waves {
         height: 40px;
         min-height: 40px;
+
     }
 
     .content {
