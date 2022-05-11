@@ -84,36 +84,11 @@ function animate() {
 
 animate();
 
-
-
-// // scroll ?
-// const image = document.querySelector('.image');
-
-// window.addEventListener('scroll', () => {
-//     let scrolled = 1;
-
-//     // Reassigning scroll position based on window scroll and diff b/w element height and window height.
-//     // Multiplying by -0.03 (negative if image is smaller than window) and decimals to slow down how fast it scales
-//     // Adding 1 so that the scale value's baseline is 1 instead of 0.
-//     const scaleThrottle = image.height > window.innerHeight ? 0.03 : -0.03;
-//     scrolled = window.scrollY / (image.height - window.innerHeight) * scaleThrottle + 1
-//     // Max scale is 1.167 (got value from example site: plenaire.co)
-//     if (scrolled < 1.168) {
-//         image.style.transform = `scale(${scrolled}, ${scrolled})`;
-//     }
-// });
-
-
-
-
-
 //new gallery
 (function e(t, n, r) { function s(o, u) { if (!n[o]) { if (!t[o]) { var a = typeof require == "function" && require; if (!u && a) return a(o, !0); if (i) return i(o, !0); var f = new Error("Cannot find module '" + o + "'"); throw f.code = "MODULE_NOT_FOUND", f } var l = n[o] = { exports: {} }; t[o][0].call(l.exports, function (e) { var n = t[o][1][e]; return s(n ? n : e) }, l, l.exports, e, t, n, r) } return n[o].exports } var i = typeof require == "function" && require; for (var o = 0; o < r.length; o++)s(r[o]); return s })({
     1: [function (require, module, exports) {
         /*!
          * imagesLoaded v3.2.0
-         * JavaScript is all like "You images are done yet or what?"
-         * MIT License
          */
 
         (function (window, factory) {
@@ -1135,12 +1110,7 @@ animate();
 
     }, { "./material-photo-gallery": 6 }], 6: [function (require, module, exports) {
         /**
-         *
-         * Material Photo Gallery v0.0.1
-         * A photo gallery inspired by Google Photos.
-         * http://ettrics.com
-         *
-         * Free to use under the MIT License.
+         *Photo Gallery
          *
          */
 
@@ -1553,7 +1523,7 @@ animate();
 
             /**
              * Caches the thumbnail and full size image that was just hovered over.
-             * Stores the css transform value so we can use it later.
+             * Stores the css transform
              *
              * @param {Event} event - The event.
              * @param {Function} fn - An optional callback function.
@@ -1736,11 +1706,7 @@ animate();
 
     }, { "./create-controls": 4, "./vendor/google-image-layout": 7, "imagesLoaded": 1 }], 7: [function (require, module, exports) {
         /**
-         * retirer
-         * Google Image Layout v0.0.1
-         * Description, by Anh Trinh.
-         * http://trinhtrunganh.com
-         *
+         * Google Image Layout 
          * Free to use under the MIT License.
          *
          */
@@ -1880,18 +1846,3 @@ var elem = document.querySelector('.m-p-g');
 document.addEventListener('DOMContentLoaded', function () {
     var gallery = new MaterialPhotoGallery(elem);
 });
-
-
-
-
-// //waves?? JSP SI JE RAJOUTE
-
-// let root = document.documentElement;
-// const section1 = document.querySelector('.header')
-
-// window.addEventListener('scroll', () => {
-//     const y = 1 + (window.scrollY || window.pageYOffset);
-//     root.style.setProperty('--gradient-percent', y * 4 + "px");
-//     console.log(y)
-// })
-
