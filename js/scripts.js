@@ -88,7 +88,7 @@ animate();
 (function e(t, n, r) { function s(o, u) { if (!n[o]) { if (!t[o]) { var a = typeof require == "function" && require; if (!u && a) return a(o, !0); if (i) return i(o, !0); var f = new Error("Cannot find module '" + o + "'"); throw f.code = "MODULE_NOT_FOUND", f } var l = n[o] = { exports: {} }; t[o][0].call(l.exports, function (e) { var n = t[o][1][e]; return s(n ? n : e) }, l, l.exports, e, t, n, r) } return n[o].exports } var i = typeof require == "function" && require; for (var o = 0; o < r.length; o++)s(r[o]); return s })({
     1: [function (require, module, exports) {
         /*!
-         * imagesLoaded v3.2.0
+         * imagesLoaded 
          */
 
         (function (window, factory) {
@@ -123,7 +123,7 @@ animate();
 
         })(window,
 
-            // --------------------------  factory -------------------------- //
+            // factory  //
 
             function factory(window, EventEmitter, eventie) {
 
@@ -132,7 +132,7 @@ animate();
                 var $ = window.jQuery;
                 var console = window.console;
 
-                // -------------------------- helpers -------------------------- //
+                // helpers //
 
                 // extend objects
                 function extend(a, b) {
@@ -165,7 +165,7 @@ animate();
                     return ary;
                 }
 
-                // -------------------------- imagesLoaded -------------------------- //
+                // imagesLoaded //
 
                 /**
                  * @param {Array, Element, NodeList, String} elem
@@ -387,7 +387,7 @@ animate();
                     this.emit('progress', this, this.img, message);
                 };
 
-                // ----- events ----- //
+                // events //
 
                 // trigger specified handler for event type
                 LoadingImage.prototype.handleEvent = function (event) {
@@ -414,7 +414,7 @@ animate();
                     eventie.unbind(this.img, 'error', this);
                 };
 
-                // -------------------------- Background -------------------------- //
+                // Background  //
 
                 function Background(url, element) {
                     this.url = url;
@@ -447,7 +447,7 @@ animate();
                     this.emit('progress', this, this.element, message);
                 };
 
-                // -------------------------- jQuery -------------------------- //
+                // jQuery //
 
                 ImagesLoaded.makeJQueryPlugin = function (jQuery) {
                     jQuery = jQuery || window.jQuery;
@@ -472,16 +472,6 @@ animate();
             });
 
     }, { "eventie": 2, "wolfy87-eventemitter": 3 }], 2: [function (require, module, exports) {
-        /*! retirer
-         * eventie v1.0.6
-         * event binding helper
-         *   eventie.bind( elem, 'click', myFn )
-         *   eventie.unbind( elem, 'click', myFn )
-         * MIT license
-         */
-
-        /*jshint browser: true, undef: true, unused: true */
-        /*global define: false, module: false */
 
         (function (window) {
 
@@ -556,20 +546,13 @@ animate();
         })(window);
 
     }, {}], 3: [function (require, module, exports) {
-        /*! retirer
-         * EventEmitter v4.2.11 - git.io/ee
-         * Unlicense - http://unlicense.org/
-         * Oliver Caldwell - https://oli.me.uk/
-         * @preserve
-         */
+
 
         ; (function () {
             'use strict';
 
             /**
              * Class for managing events.
-             * Can be extended to provide event functionality in other classes.
-             *
              * @class EventEmitter Manages event registering and emitting.
              */
             function EventEmitter() { }
@@ -581,7 +564,6 @@ animate();
 
             /**
              * Finds the index of the listener for the event in its storage array.
-             *
              * @param {Function[]} listeners Array of listeners to search through.
              * @param {Function} listener Method to look for.
              * @return {Number} Index of the specified listener, -1 if not found
@@ -600,7 +582,6 @@ animate();
 
             /**
              * Alias a method while keeping the context correct, to allow for overwriting of target method.
-             *
              * @param {String} name The name of the target method.
              * @return {Function} The aliased method
              * @api private
@@ -613,10 +594,6 @@ animate();
 
             /**
              * Returns the listener array for the specified event.
-             * Will initialise the event object and listener arrays if required.
-             * Will return an object if you use a regex search. The object contains keys for each matched event. So /ba[rz]/ might return an object containing bar and baz. But only if you have either defined them with defineEvent or added some listeners to them.
-             * Each property in the object response is an array of listener functions.
-             *
              * @param {String|RegExp} evt Name of the event to return the listeners from.
              * @return {Function[]|Object} All listener functions for the event.
              */
@@ -644,7 +621,6 @@ animate();
 
             /**
              * Takes a list of listener objects and flattens it into a list of listener functions.
-             *
              * @param {Object[]} listeners Raw listener objects.
              * @return {Function[]} Just the listener functions.
              */
@@ -660,8 +636,7 @@ animate();
             };
 
             /**
-             * Fetches the requested listeners via getListeners but will always return the results inside an object. This is mainly for internal use but others may find it useful.
-             *
+             * Fetches the requested listeners via getListeners, will always return the results inside an object.
              * @param {String|RegExp} evt Name of the event to return the listeners from.
              * @return {Object} All listener functions for an event in an object.
              */
@@ -679,10 +654,6 @@ animate();
 
             /**
              * Adds a listener function to the specified event.
-             * The listener will not be added if it is a duplicate.
-             * If the listener returns true then it will be removed after it is called.
-             * If you pass a regular expression as the event name then the listener will be added to all events that match it.
-             *
              * @param {String|RegExp} evt Name of the event to attach the listener to.
              * @param {Function} listener Method to be called when the event is emitted. If the function returns true then it will be removed after calling.
              * @return {Object} Current instance of EventEmitter for chaining.
@@ -712,7 +683,6 @@ animate();
             /**
              * Semi-alias of addListener. It will add a listener that will be
              * automatically removed after its first execution.
-             *
              * @param {String|RegExp} evt Name of the event to attach the listener to.
              * @param {Function} listener Method to be called when the event is emitted. If the function returns true then it will be removed after calling.
              * @return {Object} Current instance of EventEmitter for chaining.
@@ -730,9 +700,7 @@ animate();
             proto.once = alias('addOnceListener');
 
             /**
-             * Defines an event name. This is required if you want to use a regex to add a listener to multiple events at once. If you don't do this then how do you expect it to know what event to add to? Should it just add to every possible match for a regex? No. That is scary and bad.
-             * You need to tell it what event names should be matched by a regex.
-             *
+             * Defines an event name. This is required if you want to use a regex to add a listener to multiple events at once.
              * @param {String} evt Name of the event to create.
              * @return {Object} Current instance of EventEmitter for chaining.
              */
@@ -743,7 +711,6 @@ animate();
 
             /**
              * Uses defineEvent to define multiple events.
-             *
              * @param {String[]} evts An array of event names to define.
              * @return {Object} Current instance of EventEmitter for chaining.
              */
@@ -756,8 +723,6 @@ animate();
 
             /**
              * Removes a listener function from the specified event.
-             * When passed a regular expression as the event name, it will remove the listener from all events that match it.
-             *
              * @param {String|RegExp} evt Name of the event to remove the listener from.
              * @param {Function} listener Method to remove from the event.
              * @return {Object} Current instance of EventEmitter for chaining.
@@ -787,10 +752,6 @@ animate();
 
             /**
              * Adds listeners in bulk using the manipulateListeners method.
-             * If you pass an object as the second argument you can add to multiple events at once. The object should contain key value pairs of events and listeners or listener arrays. You can also pass it an event name and an array of listeners to be added.
-             * You can also pass it a regular expression to add the array of listeners to all events that match it.
-             * Yeah, this function does quite a bit. That's probably a bad thing.
-             *
              * @param {String|Object|RegExp} evt An event name if you will pass an array of listeners next. An object if you wish to add to multiple events at once.
              * @param {Function[]} [listeners] An optional array of listener functions to add.
              * @return {Object} Current instance of EventEmitter for chaining.
@@ -802,10 +763,6 @@ animate();
 
             /**
              * Removes listeners in bulk using the manipulateListeners method.
-             * If you pass an object as the second argument you can remove from multiple events at once. The object should contain key value pairs of events and listeners or listener arrays.
-             * You can also pass it an event name and an array of listeners to be removed.
-             * You can also pass it a regular expression to remove the listeners from all events that match it.
-             *
              * @param {String|Object|RegExp} evt An event name if you will pass an array of listeners next. An object if you wish to remove from multiple events at once.
              * @param {Function[]} [listeners] An optional array of listener functions to remove.
              * @return {Object} Current instance of EventEmitter for chaining.
@@ -816,12 +773,7 @@ animate();
             };
 
             /**
-             * Edits listeners in bulk. The addListeners and removeListeners methods both use this to do their job. You should really use those instead, this is a little lower level.
-             * The first argument will determine if the listeners are removed (true) or added (false).
-             * If you pass an object as the second argument you can add/remove from multiple events at once. The object should contain key value pairs of events and listeners or listener arrays.
-             * You can also pass it an event name and an array of listeners to be added/removed.
-             * You can also pass it a regular expression to manipulate the listeners of all events that match it.
-             *
+             * Edits listeners in bulk.
              * @param {Boolean} remove True if you want to remove listeners, false if you want to add.
              * @param {String|Object|RegExp} evt An event name if you will pass an array of listeners next. An object if you wish to add/remove from multiple events at once.
              * @param {Function[]} [listeners] An optional array of listener functions to add/remove.
@@ -849,8 +801,8 @@ animate();
                     }
                 }
                 else {
-                    // So evt must be a string
-                    // And listeners must be an array of listeners
+                    // evt must be a string
+                    // listeners must be an array of listeners
                     // Loop over it and pass each one to the multiple method
                     i = listeners.length;
                     while (i--) {
@@ -863,9 +815,6 @@ animate();
 
             /**
              * Removes all listeners from a specified event.
-             * If you do not specify an event then all listeners will be removed.
-             * That means every event will be emptied.
-             * You can also pass a regex to remove all events that match it.
              *
              * @param {String|RegExp} [evt] Optional name of the event to remove all listeners for. Will remove from every event if not passed.
              * @return {Object} Current instance of EventEmitter for chaining.
@@ -898,19 +847,12 @@ animate();
 
             /**
              * Alias of removeEvent.
-             *
              * Added to mirror the node API.
              */
             proto.removeAllListeners = alias('removeEvent');
 
             /**
-             * Emits an event of your choice.
-             * When emitted, every listener attached to that event will be executed.
-             * If you pass the optional argument array then those arguments will be passed to every listener upon execution.
-             * Because it uses `apply`, your array of arguments will be passed as if you wrote them out separately.
-             * So they will not arrive within the array on the other side, they will be separate.
-             * You can also pass a regular expression to emit to all events that match it.
-             *
+             * Emits an event
              * @param {String|RegExp} evt Name of the event to emit and execute listeners for.
              * @param {Array} [args] Optional array of arguments to be passed to each listener.
              * @return {Object} Current instance of EventEmitter for chaining.
@@ -956,8 +898,6 @@ animate();
 
             /**
              * Subtly different from emitEvent in that it will pass its arguments on to the listeners, as opposed to taking a single array of arguments to pass on.
-             * As with emitEvent, you can pass a regex in place of the event name to emit to all events that match it.
-             *
              * @param {String|RegExp} evt Name of the event to emit and execute listeners for.
              * @param {...*} Optional additional arguments to be passed to each listener.
              * @return {Object} Current instance of EventEmitter for chaining.
@@ -968,10 +908,7 @@ animate();
             };
 
             /**
-             * Sets the current value to check against when executing listeners. If a
-             * listeners return value matches the one set here then it will be removed
-             * after execution. This value defaults to true.
-             *
+             * Sets the current value to check against when executing listeners.
              * @param {*} value The new value to check for when executing listeners.
              * @return {Object} Current instance of EventEmitter for chaining.
              */
@@ -981,10 +918,7 @@ animate();
             };
 
             /**
-             * Fetches the current value to check against when executing listeners. If
-             * the listeners return value matches this one then it should be removed
-             * automatically. It will return true by default.
-             *
+             * Fetches the current value to check against when executing listeners.
              * @return {*|Boolean} The current value to check for or the default, true.
              * @api private
              */
@@ -1707,8 +1641,6 @@ animate();
     }, { "./create-controls": 4, "./vendor/google-image-layout": 7, "imagesLoaded": 1 }], 7: [function (require, module, exports) {
         /**
          * Google Image Layout 
-         * Free to use under the MIT License.
-         *
          */
 
         (function (root, factory) {
@@ -1747,7 +1679,7 @@ animate();
             };
 
             /**
-             * Get the height that make all images fit the container
+             *  height that make all images fit the container
              *
              * width = w1 + w2 + w3 + ... = r1*h + r2*h + r3*h + ...
              * 
@@ -1769,7 +1701,7 @@ animate();
                     r += parseInt(img.getAttribute('data-width')) / parseInt(img.getAttribute('data-height'));
                 }
 
-                return width / r; //have to round down because Firefox will automatically roundup value with number of decimals > 3
+                return width / r;
 
             };
 

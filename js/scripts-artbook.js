@@ -25,7 +25,7 @@ var modal = {
         var last = images[images.length - 1];
         var next;
         for (var i = 0; i < images.length; i++) {
-            // only move on to the next item if it's not the last item in the array
+            // move on to the next item if it's not the last item in the array
             if (images[i].classList.contains('is-visible') && images[i] !== images[images.length - 1]) {
                 var current = images[i];
                 next = images[i + 1];
@@ -37,7 +37,7 @@ var modal = {
     prev: function () {
         var images = document.querySelectorAll('.compare-item');
         var prev;
-        // only go to previous is it is not the first item in the array
+        // go to previous is it is not the first item in the array
         for (var i = images.length; i--;) {
             if (images[i].classList.contains('is-visible') && images[i] !== images[0]) {
                 var current = images[i];
